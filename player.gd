@@ -51,5 +51,7 @@ func _update_animasi():
 		# 🔥 CEK DOUBLE JUMP DULUAN
 		if is_double_jumping:
 			$AnimatedSprite2D.play("double_jump")  # ← Ganti nama sesuai animasi kamu
+		elif velocity.y > 0 :
+			$AnimatedSprite2D.play("jatuh")
 		else:
 			$AnimatedSprite2D.play("lompat")       # Animasi lompatan biasa
