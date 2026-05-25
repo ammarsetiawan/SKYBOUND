@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://0xt8iltn54w0"]
+
+[ext_resource type="Script" uid="uid://ccj827ix2nlj4" path="res://level_1.gd" id="1_70cbr"]
+[ext_resource type="Texture2D" uid="uid://c28w4o8eiwq6n" path="res://Pixel Adventure 1/Free/Background/Blue.png" id="1_hn12h"]
+[ext_resource type="PackedScene" uid="uid://bd24qhloktoja" path="res://scene/tile_map_layer.tscn" id="2_ihfcg"]
+[ext_resource type="PackedScene" uid="uid://cvm3iufvh2n7s" path="res://scene/player.tscn" id="3_rka8t"]
+[ext_resource type="PackedScene" uid="uid://bg40q7a6oc2sw" path="res://scene/killzone.tscn" id="4_rka8t"]
+[ext_resource type="PackedScene" uid="uid://c7tv4l7jft0m6" path="res://scene/void.tscn" id="5_5hph3"]
+[ext_resource type="Texture2D" uid="uid://dli7ufto0gs0j" path="res://Pixel Adventure 1/Free/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png" id="7_lsoxn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53ndp"]
+size = Vector2(47.75, 42.5)
+
+[node name="Level_1" type="Node2D" unique_id=485376439]
+texture_filter = 1
+script = ExtResource("1_70cbr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1611855441]
+texture_filter = 1
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1147.0
+offset_bottom = 639.99994
+focus_neighbor_left = NodePath(".")
+texture = ExtResource("1_hn12h")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="TileMapLayer" parent="." unique_id=203796870 instance=ExtResource("2_ihfcg")]
+
+[node name="player" parent="." unique_id=329629931 instance=ExtResource("3_rka8t")]
+position = Vector2(70, 343)
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1231754751]
+position = Vector2(3.8146973e-06, 0)
+scale = Vector2(3, 3)
+zoom = Vector2(2, 2)
+limit_left = 1
+limit_top = 3
+limit_right = 1158
+limit_bottom = 469
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+
+[node name="killzone" parent="." unique_id=739014264 instance=ExtResource("4_rka8t")]
+position = Vector2(223.99998, 318.00003)
+scale = Vector2(0.7, 0.7)
+
+[node name="killzone2" parent="." unique_id=680912217 instance=ExtResource("4_rka8t")]
+position = Vector2(343, 223)
+scale = Vector2(0.5, 0.5)
+
+[node name="killzone3" parent="." unique_id=1068356687 instance=ExtResource("4_rka8t")]
+position = Vector2(976, 184)
+
+[node name="killzone4" parent="." unique_id=1137058903 instance=ExtResource("4_rka8t")]
+position = Vector2(760.00006, 208.00002)
+scale = Vector2(0.4, 0.4)
+
+[node name="killzone5" parent="." unique_id=1721380858 instance=ExtResource("4_rka8t")]
+position = Vector2(855.99994, 394.99997)
+scale = Vector2(1.1, 1.1)
+
+[node name="Void" parent="." unique_id=68978514 instance=ExtResource("5_5hph3")]
+position = Vector2(-48, 450)
+
+[node name="pindah_scene" type="Area2D" parent="." unique_id=1554239700]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pindah_scene" unique_id=1621165335]
+position = Vector2(1120, 367)
+shape = SubResource("RectangleShape2D_53ndp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1933972938]
+texture_filter = 1
+position = Vector2(1128, 358)
+texture = ExtResource("7_lsoxn")
+
+[connection signal="body_entered" from="pindah_scene" to="." method="_on_area_2d_body_entered"]

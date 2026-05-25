@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cb3ki3gt7hmka"]
+
+[ext_resource type="PackedScene" uid="uid://bd24qhloktoja" path="res://scene/tile_map_layer.tscn" id="1_ootda"]
+[ext_resource type="PackedScene" uid="uid://cvm3iufvh2n7s" path="res://scene/player.tscn" id="2_pjrwy"]
+
+[node name="level_2" type="Node2D" unique_id=1396059075]
+
+[node name="TileMapLayer" parent="." unique_id=203796870 instance=ExtResource("1_ootda")]
+
+[node name="player" parent="." unique_id=329629931 instance=ExtResource("2_pjrwy")]
+position = Vector2(35, 27)
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1599003503]
+position = Vector2(0.833337, 0)
+scale = Vector2(3, 3)
+zoom = Vector2(2, 2)
+limit_left = 1
+limit_top = 3
+limit_right = 1158
+limit_bottom = 469
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
