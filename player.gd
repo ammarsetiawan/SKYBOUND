@@ -7,6 +7,11 @@ const MAX_JUMPS = 2
 var jumps_left := MAX_JUMPS
 var is_double_jumping := false  # 🔥 Tambahin ini buat nandain double jump
 
+func respawn():
+	velocity = Vector2.ZERO  # Stop semua gerakan biar nggak nyangkut
+	global_position = Vector2(88.0, 348.0)  # Ganti koordinat ini sesuai posisi spawn lu
+	print("✅ Respawn berhasil!")
+
 func _physics_process(delta: float) -> void:
 	# 1. GRAVITASI
 	if not is_on_floor():
