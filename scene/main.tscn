@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bd24qhloktoja" path="res://scene/tile_map_layer.tscn" id="1_v0l8b"]
 [ext_resource type="PackedScene" uid="uid://cvm3iufvh2n7s" path="res://scene/player.tscn" id="2_wp4xf"]
 [ext_resource type="PackedScene" uid="uid://bg40q7a6oc2sw" path="res://killzone.tscn" id="3_wp4xf"]
+[ext_resource type="PackedScene" uid="uid://c7tv4l7jft0m6" path="res://void.tscn" id="4_brvut"]
 
 [node name="main" type="Node2D" unique_id=640147080]
 texture_filter = 1
@@ -24,7 +25,7 @@ position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 
 [node name="killzone" parent="." unique_id=739014264 instance=ExtResource("3_wp4xf")]
-position = Vector2(242, 307)
+position = Vector2(218, 315)
 
 [node name="killzone2" parent="." unique_id=564638598 instance=ExtResource("3_wp4xf")]
 position = Vector2(334, 216)
@@ -37,3 +38,6 @@ position = Vector2(751, 199)
 
 [node name="killzone5" parent="." unique_id=1593368168 instance=ExtResource("3_wp4xf")]
 position = Vector2(846, 393)
+
+[node name="Void" parent="." unique_id=68978514 instance=ExtResource("4_brvut")]
+position = Vector2(-51, 422)

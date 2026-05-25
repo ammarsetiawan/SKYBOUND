@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c7tv4l7jft0m6"]
+
+[ext_resource type="Script" uid="uid://cg72akt0u5n0x" path="res://void.gd" id="1_u8be3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u8be3"]
+
+[node name="Void" type="Area2D" unique_id=68978514]
+script = ExtResource("1_u8be3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1888094422]
+position = Vector2(0, 2)
+shape = SubResource("WorldBoundaryShape2D_u8be3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
