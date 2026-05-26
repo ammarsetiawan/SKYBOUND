@@ -7,9 +7,47 @@
 [ext_resource type="PackedScene" uid="uid://bg40q7a6oc2sw" path="res://scene/killzone.tscn" id="4_rka8t"]
 [ext_resource type="PackedScene" uid="uid://c7tv4l7jft0m6" path="res://scene/void.tscn" id="5_5hph3"]
 [ext_resource type="Texture2D" uid="uid://dli7ufto0gs0j" path="res://Pixel Adventure 1/Free/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png" id="7_lsoxn"]
+[ext_resource type="PackedScene" uid="uid://cvqhbsrl1tmvq" path="res://scene/platfrom_bisa_gerak.tscn" id="8_x17xt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_53ndp"]
 size = Vector2(118.875, 46.25)
+
+[sub_resource type="Animation" id="Animation_x17xt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(369, 352)]
+}
+
+[sub_resource type="Animation" id="Animation_c1764"]
+resource_name = "terbang"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(369, 352), Vector2(558, 352)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ri5j0"]
+_data = {
+&"RESET": SubResource("Animation_x17xt"),
+&"terbang": SubResource("Animation_c1764")
+}
 
 [node name="Level_1" type="Node2D" unique_id=485376439]
 texture_filter = 1
@@ -75,5 +113,15 @@ shape = SubResource("RectangleShape2D_53ndp")
 texture_filter = 1
 position = Vector2(3161, 405)
 texture = ExtResource("7_lsoxn")
+
+[node name="platfrom bisa gerak" parent="." unique_id=1624677179 instance=ExtResource("8_x17xt")]
+position = Vector2(1225, 397)
+
+[node name="platfrom bisa gerak2" parent="." unique_id=1356499753 instance=ExtResource("8_x17xt")]
+position = Vector2(369, 352)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="platfrom bisa gerak2" unique_id=893797395]
+libraries/ = SubResource("AnimationLibrary_ri5j0")
+autoplay = &"terbang"
 
 [connection signal="body_entered" from="pindah_scene" to="." method="_on_area_2d_body_entered"]
