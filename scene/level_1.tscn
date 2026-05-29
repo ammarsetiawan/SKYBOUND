@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dli7ufto0gs0j" path="res://Pixel Adventure 1/Free/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png" id="7_lsoxn"]
 [ext_resource type="PackedScene" uid="uid://cvqhbsrl1tmvq" path="res://scene/platfrom_bisa_gerak.tscn" id="8_x17xt"]
 [ext_resource type="PackedScene" uid="uid://bldb8wyvwb4vj" path="res://scene/enemy.tscn" id="9_c1764"]
+[ext_resource type="AudioStream" uid="uid://bimuckeflf55r" path="res://brackeys_platformer_assets/music/time_for_adventure.mp3" id="10_ri5j0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_53ndp"]
 size = Vector2(118.875, 46.25)
@@ -123,6 +124,20 @@ libraries/ = SubResource("AnimationLibrary_ri5j0")
 autoplay = &"terbang"
 
 [node name="enemy" parent="." unique_id=1078275774 instance=ExtResource("9_c1764")]
-position = Vector2(312.00003, 298)
+position = Vector2(689, 239)
+
+[node name="enemy2" parent="." unique_id=1668844339 instance=ExtResource("9_c1764")]
+position = Vector2(315.00003, 302)
+
+[node name="enemy3" parent="." unique_id=1832423347 instance=ExtResource("9_c1764")]
+position = Vector2(1450, 288)
+
+[node name="enemy4" parent="." unique_id=1796075154 instance=ExtResource("9_c1764")]
+position = Vector2(2407, 351)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1289337034]
+stream = ExtResource("10_ri5j0")
+volume_db = 24.0
+autoplay = true
 
 [connection signal="body_entered" from="pindah_scene" to="." method="_on_area_2d_body_entered"]
