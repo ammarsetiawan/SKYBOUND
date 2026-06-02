@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://cbmvjmjkdudti"]
 
 [ext_resource type="Script" uid="uid://d00kiapoh7eqx" path="res://main.gd" id="1_4j5ol"]
-[ext_resource type="PackedScene" uid="uid://0xt8iltn54w0" path="res://scene/level_1.tscn" id="2_v0l8b"]
+[ext_resource type="PackedScene" uid="uid://oy6a481sr2cj" path="res://scene/menu_home.tscn" id="2_v0l8b"]
 
 [node name="main" type="Node2D" unique_id=640147080]
 texture_filter = 1
 script = ExtResource("1_4j5ol")
 
-[node name="Level_1" parent="." unique_id=485376439 instance=ExtResource("2_v0l8b")]
+[node name="MENU_HOME" parent="." unique_id=139986174 instance=ExtResource("2_v0l8b")]
+offset_left = 1158.0
+offset_top = 643.0
+offset_right = 1158.0
+offset_bottom = 643.0
