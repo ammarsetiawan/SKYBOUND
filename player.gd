@@ -8,13 +8,21 @@ const MAX_JUMPS = 2
 var jumps_left := MAX_JUMPS
 var is_double_jumping := false  # 🔥 Tambahin ini buat nandain double jump
 
-func respawn():
+func _ready() -> void:
+	$effect_respawn.hide()
+
+func respawn():	
+	$effect_respawn.show()
+	$AnimatedSprite2D.hide()
 	velocity = Vector2.ZERO  # Stop semua gerakan biar nggak nyangkut
 	global_position = Vector2(88.0, 348.0)  # Ganti koordinat ini sesuai posisi spawn lu
 	print("✅ Respawn berhasil!")
+	$effect_respawn.play("efek_respawn")
+	await $effect_respawn.animation_finished
+	$effect_respawn.hide()
+	$AnimatedSprite2D.show()
 
 func _physics_process(delta: float) -> void:
-	
 	
 	# 1. GRAVITASI
 	if not is_on_floor():

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bcevdx87valm6" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Run (32x32).png" id="4_dw050"]
 [ext_resource type="Texture2D" uid="uid://k7v8ch4ep578" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Fall (32x32).png" id="5_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://cdouel5kiufw6" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Jump (32x32).png" id="5_b26j0"]
+[ext_resource type="Texture2D" uid="uid://8h3ttp1jxpso" path="res://Pixel Adventure 1/Free/Main Characters/Appearing (96x96).png" id="7_hp4bs"]
 
 [sub_resource type="Curve" id="Curve_oh5ij"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -255,6 +256,63 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_331ug"]
 size = Vector2(20, 26)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2vtq"]
+atlas = ExtResource("7_hp4bs")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fvbb"]
+atlas = ExtResource("7_hp4bs")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ml7e8"]
+atlas = ExtResource("7_hp4bs")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihjo1"]
+atlas = ExtResource("7_hp4bs")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk1vr"]
+atlas = ExtResource("7_hp4bs")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34jf3"]
+atlas = ExtResource("7_hp4bs")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7b46"]
+atlas = ExtResource("7_hp4bs")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j4wxg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2vtq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2fvbb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ml7e8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihjo1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk1vr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34jf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7b46")
+}],
+"loop": false,
+"name": &"efek_respawn",
+"speed": 11.0
+}]
+
 [node name="player" type="CharacterBody2D" unique_id=329629931]
 position = Vector2(0, 3)
 scale = Vector2(1.2, 1.2)
@@ -277,8 +335,13 @@ color = Color(0.90588236, 1, 0.9490196, 1)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1737952507]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_pgbbb")
-animation = &"jatuh"
+animation = &"diam"
+frame_progress = 0.88825554
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=95339056]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_331ug")
+
+[node name="effect_respawn" type="AnimatedSprite2D" parent="." unique_id=1241348427]
+sprite_frames = SubResource("SpriteFrames_j4wxg")
+animation = &"efek_respawn"

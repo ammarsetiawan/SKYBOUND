@@ -3,6 +3,50 @@
 [ext_resource type="Script" uid="uid://c1b7h0kueq72k" path="res://enemy.gd" id="1_8u16h"]
 [ext_resource type="Texture2D" uid="uid://2lvqkwqroxc4" path="res://Pixel Adventure 1/Free/enemy/slime_green.png" id="1_f87vc"]
 [ext_resource type="Texture2D" uid="uid://bh743f5nf8d6u" path="res://brackeys_platformer_assets/sprites/slime_green.png" id="2_8u16h"]
+[ext_resource type="Texture2D" uid="uid://6rv6gesmeo6t" path="res://Pixel Adventure 1/Free/Main Characters/Desappearing (96x96).png" id="2_b7koy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj55t"]
+atlas = ExtResource("2_b7koy")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_un1pk"]
+atlas = ExtResource("2_b7koy")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jntje"]
+atlas = ExtResource("2_b7koy")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysr33"]
+atlas = ExtResource("2_b7koy")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jl0n1"]
+atlas = ExtResource("2_b7koy")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_65i8h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sj55t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_un1pk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jntje")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysr33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jl0n1")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 11.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqle"]
 atlas = ExtResource("2_8u16h")
@@ -100,6 +144,12 @@ size = Vector2(12.500002, 9.499999)
 texture_filter = 1
 scale = Vector2(1.6, 1.6)
 script = ExtResource("1_8u16h")
+
+[node name="animasi_hit" type="AnimatedSprite2D" parent="." unique_id=837725550]
+position = Vector2(0, 6.2500005)
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_65i8h")
+animation = &"hit"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1336850355]
 sprite_frames = SubResource("SpriteFrames_jntje")

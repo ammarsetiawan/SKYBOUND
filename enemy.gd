@@ -29,4 +29,9 @@ func _on_hurt_box_body_entered(body: Node2D) -> void:
 
 func _on_hit_enemy_body_entered(body: Node2D) -> void:
 	if body.name == "player":
+		velocity.x = 0
+		$hit_enemy.queue_free()
+		$AnimatedSprite2D.hide()
+		$animasi_hit.play("hit")
+		await $animasi_hit.animation_finished
 		queue_free()
