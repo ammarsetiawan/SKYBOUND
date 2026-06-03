@@ -8,8 +8,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
+	if Input.is_action_just_pressed("enter"):
+		_on_play_pressed()
+	elif Input.is_action_just_pressed("escape"):
+		_on_exit_pressed()
 
 
 
