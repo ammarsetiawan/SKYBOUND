@@ -1,4 +1,5 @@
 extends CharacterBody2D
+@onready var partikel: CPUParticles2D = $partikel
 
 const SPEED = 200.0
 const JUMP_VELOCITY = -400.0
@@ -13,6 +14,8 @@ func respawn():
 	print("✅ Respawn berhasil!")
 
 func _physics_process(delta: float) -> void:
+	
+	
 	# 1. GRAVITASI
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -35,6 +38,15 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		
+		#jump_effect
+	if  velocity.x < 0 || velocity.x > 0 || !is_on_floor():
+		partikel.emitting = true
+	elif velocity.x == 0:
+		partikel.emitting = false
+	
+	
+
 
 	# 4. GERAKKAN KARAKTER
 	move_and_slide()
