@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://cb3ki3gt7hmka"]
 
 [ext_resource type="Texture2D" uid="uid://dkvtemrx0gspn" path="res://Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="1_ootda"]
-[ext_resource type="Script" uid="uid://b8kutgvyra1bc" path="res://level_2.gd" id="1_txbx5"]
+[ext_resource type="Script" uid="uid://b8kutgvyra1bc" path="res://level_2_backup.gd" id="1_txbx5"]
 [ext_resource type="PackedScene" uid="uid://cvm3iufvh2n7s" path="res://scene/player.tscn" id="2_pjrwy"]
 [ext_resource type="Texture2D" uid="uid://d1wmybhulwrsk" path="res://Pixel Adventure 1/Free/Traps/Spikes/Idle.png" id="2_r5ltt"]
 [ext_resource type="PackedScene" uid="uid://c7tv4l7jft0m6" path="res://scene/void.tscn" id="3_pjrwy"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dli7ufto0gs0j" path="res://Pixel Adventure 1/Free/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png" id="7_ds6wj"]
 [ext_resource type="PackedScene" uid="uid://ex537fufhb12" path="res://scene/platform_terjatuh.tscn" id="8_ngmhx"]
 [ext_resource type="PackedScene" uid="uid://bldb8wyvwb4vj" path="res://scene/enemy.tscn" id="9_g1oo2"]
+[ext_resource type="PackedScene" uid="uid://bbuxoys7ny1rx" path="res://scene/kipas.tscn" id="11_lh1ov"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pjrwy"]
 texture = ExtResource("1_ootda")
@@ -321,5 +322,8 @@ position = Vector2(4224, 339)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2097107081]
 position = Vector2(9.5, 16.5)
 shape = SubResource("RectangleShape2D_lh1ov")
+
+[node name="kipas" parent="." unique_id=1904264828 instance=ExtResource("11_lh1ov")]
+position = Vector2(941.00006, 266.00003)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
