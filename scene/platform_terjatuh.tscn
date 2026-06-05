@@ -42,7 +42,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"platform",
-"speed": 8.0
+"speed": 11.0
 }]
 
 [node name="platform_terjatuh" type="Node2D" unique_id=81235521]
@@ -64,7 +64,7 @@ shape = SubResource("RectangleShape2D_aqsxh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D" unique_id=214951992]
 sprite_frames = SubResource("SpriteFrames_6swtu")
 animation = &"platform"
-frame_progress = 0.58746624
+frame_progress = 0.10365004
 
 [node name="Timer" type="Timer" parent="StaticBody2D" unique_id=1835442505]
 

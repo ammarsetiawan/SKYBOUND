@@ -6,6 +6,8 @@ extends Node2D
 # Variabel penanda apakah platform sudah harus jatuh
 var sedang_jatuh : bool = false
 
+
+
 func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
 	$StaticBody2D/AnimatedSprite2D.position.y = 4.0
 	await get_tree().create_timer(0.10).timeout

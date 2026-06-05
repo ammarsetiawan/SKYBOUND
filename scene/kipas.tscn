@@ -11,7 +11,7 @@ point_count = 2
 size = Vector2(22.500004, 7.5000033)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_al3db"]
-size = Vector2(22.5, 18.750008)
+size = Vector2(22.5, 23.750011)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_al3db"]
 atlas = ExtResource("1_sf3ke")
@@ -46,7 +46,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"kipas",
-"speed": 13.0
+"speed": 22.0
 }]
 
 [node name="kipas" type="Node2D" unique_id=1904264828]
@@ -98,19 +98,21 @@ color = Color(0.90588236, 1, 0.9490196, 1)
 position = Vector2(0.6249989, -2.2351738e-07)
 scale = Vector2(0.99999946, 0.99999946)
 shape = SubResource("RectangleShape2D_6twsi")
-debug_color = Color(0.7612011, 0.45205766, 5.7756904e-07, 0.41960785)
+debug_color = Color(6.738305e-07, 0.59594524, 0.71921545, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="StaticBody2D" unique_id=1093144140]
 scale = Vector2(0.99999994, 0.99999994)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D" unique_id=1761230955]
-position = Vector2(0.6249988, -5.6249976)
+position = Vector2(0.6249988, -8.125)
 scale = Vector2(0.99999964, 0.99999964)
 shape = SubResource("RectangleShape2D_al3db")
+debug_color = Color(0, 0.62955725, 0.48457414, 0.41960785)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D" unique_id=1158156632]
 scale = Vector2(0.99999976, 0.99999976)
 sprite_frames = SubResource("SpriteFrames_02216")
 animation = &"kipas"
+frame_progress = 0.48856363
 
 [connection signal="body_entered" from="StaticBody2D/Area2D" to="." method="_on_area_2d_body_entered"]
