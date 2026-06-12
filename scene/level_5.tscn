@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bqd8mt1f21iej"]
 
 [ext_resource type="Texture2D" uid="uid://dd560ht2ipgim" path="res://Pixel Adventure 1/Free/Background/Green.png" id="1_ul5mb"]
+[ext_resource type="FontFile" uid="uid://bv3yshw44rt7j" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_3153v"]
 [ext_resource type="PackedScene" uid="uid://cvm3iufvh2n7s" path="res://scene/player.tscn" id="2_f74of"]
 [ext_resource type="Texture2D" uid="uid://dkvtemrx0gspn" path="res://Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="3_03a3j"]
 [ext_resource type="PackedScene" uid="uid://c7tv4l7jft0m6" path="res://scene/void.tscn" id="4_f74of"]
@@ -176,6 +177,16 @@ offset_right = 6760.0
 offset_bottom = 625.0
 texture = ExtResource("1_ul5mb")
 stretch_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=182562903]
+offset_left = 565.0
+offset_top = 127.0
+offset_right = 880.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.6784314)
+theme_override_fonts/font = ExtResource("2_3153v")
+theme_override_font_sizes/font_size = 38
+text = "level 5"
 
 [node name="player" parent="." unique_id=329629931 instance=ExtResource("2_f74of")]
 position = Vector2(192, 333)

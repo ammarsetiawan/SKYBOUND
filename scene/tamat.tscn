@@ -1,0 +1,516 @@
+[gd_scene format=3 uid="uid://3ante65phm2q"]
+
+[ext_resource type="Script" uid="uid://ebojggjlarp8" path="res://tamat.gd" id="1_1c2k8"]
+[ext_resource type="Texture2D" uid="uid://8w2wey2sr578" path="res://public/Screenshot 2026-06-02 195641.png" id="1_mc7rx"]
+[ext_resource type="Texture2D" uid="uid://cdouel5kiufw6" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Jump (32x32).png" id="2_f4pc8"]
+[ext_resource type="FontFile" uid="uid://c8qhpqwc0eaxe" path="res://brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_biw3l"]
+[ext_resource type="Texture2D" uid="uid://bhyj66ud46jxh" path="res://Pixel Adventure 1/Free/Items/Checkpoints/End/End (Pressed) (64x64).png" id="4_biw3l"]
+[ext_resource type="Texture2D" uid="uid://cc1g3edwhu733" path="res://Pixel Adventure 1/Free/Menu/Buttons/Restart.png" id="6_1c2k8"]
+[ext_resource type="Texture2D" uid="uid://6jmmvxxs2bxf" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Double Jump (32x32).png" id="7_0gvvt"]
+[ext_resource type="Texture2D" uid="uid://b7tcsvkur8kqd" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Idle (32x32).png" id="8_g8jq2"]
+[ext_resource type="Texture2D" uid="uid://ocscvcrpcdm4" path="res://public/credit/ammar.png" id="9_46vfg"]
+[ext_resource type="FontFile" uid="uid://bv3yshw44rt7j" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="10_3q0ns"]
+[ext_resource type="Texture2D" uid="uid://3ppkdckbj2s" path="res://public/credit/ahmet.png" id="10_10eqp"]
+[ext_resource type="Texture2D" uid="uid://dovmgj5y5qacw" path="res://public/credit/kiky.png" id="11_j7mi4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mc7rx"]
+bg_color = Color(0.7643761, 0.55103505, 0.32408714, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_size = 20
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pt480"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1c2k8"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gvvt"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8jq2"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46vfg"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10eqp"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7mi4"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3q0ns"]
+atlas = ExtResource("4_biw3l")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1hj3p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pt480")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c2k8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gvvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8jq2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_46vfg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10eqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7mi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3q0ns")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_1c2k8"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pt480"]
+load_path = "res://.godot/imported/Previous.png-ca37ec1e6a5e68797f2a4057b8d6adba.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hj3p"]
+atlas = ExtResource("7_0gvvt")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7ijl"]
+atlas = ExtResource("7_0gvvt")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27u0g"]
+atlas = ExtResource("7_0gvvt")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rl3o1"]
+atlas = ExtResource("7_0gvvt")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7am5"]
+atlas = ExtResource("7_0gvvt")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8n05d"]
+atlas = ExtResource("7_0gvvt")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqdq7"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53pnh"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hml6o"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwqf3"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r0up"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lr0np"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tylkw"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nf3sp"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq6d5"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbs62"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yicxx"]
+atlas = ExtResource("8_g8jq2")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fqdq7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hj3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7ijl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27u0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rl3o1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7am5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8n05d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqdq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53pnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hml6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwqf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r0up")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lr0np")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tylkw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nf3sp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq6d5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbs62")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yicxx")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 16.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_10eqp"]
+bg_color = Color(0.08627451, 0.42745098, 0.77254903, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j7mi4"]
+bg_color = Color(0.4, 0.5137255, 0.5019608, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3q0ns"]
+bg_color = Color(1, 0, 0.047058824, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="tamat" type="Control" unique_id=183107008]
+texture_filter = 1
+layout_mode = 3
+anchor_left = 0.054
+anchor_top = -0.13800001
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -62.208
+offset_top = 89.42401
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(237, 120)
+script = ExtResource("1_1c2k8")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1907457177]
+texture_filter = 1
+layout_mode = 0
+offset_left = -643.0
+offset_top = -244.0
+offset_right = 1268.0
+offset_bottom = 726.0
+texture = ExtResource("1_mc7rx")
+
+[node name="Panel" type="Panel" parent="." unique_id=1412306620]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -396.5
+offset_top = -261.0
+offset_right = 394.5
+offset_bottom = 259.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc7rx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=61131959]
+position = Vector2(593, 87)
+sprite_frames = SubResource("SpriteFrames_1hj3p")
+autoplay = "default"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1052849135]
+texture_filter = 1
+position = Vector2(754.99994, 104.89084)
+rotation = 0.49741885
+scale = Vector2(1.4562373, 1.3632884)
+texture = ExtResource("2_f4pc8")
+offset = Vector2(0, 2)
+
+[node name="Label3" type="Label" parent="." unique_id=373049671]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.5
+offset_top = -124.0
+offset_right = 96.5
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("3_biw3l")
+theme_override_font_sizes/font_size = 17
+text = "*DEVELOPER*"
+
+[node name="Label2" type="Label" parent="." unique_id=1772098312]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -172.0
+offset_right = 132.0
+offset_bottom = -152.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("3_biw3l")
+theme_override_font_sizes/font_size = 15
+text = "YOU ARE THE WINNER"
+
+[node name="Label" type="Label" parent="." unique_id=1260012604]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -208.10916
+offset_right = 180.0
+offset_bottom = -173.10916
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.46357924, 0.29890752, 0.24761188, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("3_biw3l")
+theme_override_font_sizes/font_size = 34
+text = "RUN THE GUY"
+
+[node name="back_to_menu" type="TextureButton" parent="." unique_id=423221072]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 101.0
+offset_right = 254.0
+offset_bottom = 151.2857
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_1c2k8")
+texture_normal = SubResource("CompressedTexture2D_pt480")
+stretch_mode = 0
+
+[node name="restart" type="TextureButton" parent="." unique_id=1572694700]
+layout_mode = 0
+offset_left = 895.0
+offset_top = 104.0
+offset_right = 939.0
+offset_bottom = 147.0
+toggle_mode = true
+button_pressed = true
+texture_normal = ExtResource("6_1c2k8")
+stretch_mode = 0
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1571192986]
+position = Vector2(240.99998, 548)
+scale = Vector2(2.015625, 2.015625)
+sprite_frames = SubResource("SpriteFrames_fqdq7")
+animation = &"new_animation"
+autoplay = "new_animation"
+
+[node name="ammar" type="Sprite2D" parent="." unique_id=1506955363]
+position = Vector2(358.00003, 276)
+scale = Vector2(0.15925926, 0.15925926)
+texture = ExtResource("9_46vfg")
+
+[node name="Panel" type="Panel" parent="ammar" unique_id=1548085135]
+offset_left = -301.3955
+offset_top = 508.6045
+offset_right = 349.3625
+offset_bottom = 680.88086
+theme_override_styles/panel = SubResource("StyleBoxFlat_10eqp")
+
+[node name="Label2" type="Label" parent="ammar" unique_id=222384672]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -809.4695
+offset_top = -138.34717
+offset_right = -108.46948
+offset_bottom = -19.347168
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("10_3q0ns")
+theme_override_font_sizes/font_size = 60
+text = "GAMEPLAY
+PROGRAMER"
+
+[node name="ahmet" type="Sprite2D" parent="." unique_id=1434529133]
+position = Vector2(584.25006, 274.07022)
+scale = Vector2(0.14768524, 0.14285894)
+texture = ExtResource("10_10eqp")
+
+[node name="Panel" type="Panel" parent="ahmet" unique_id=1393464816]
+offset_left = -367.05884
+offset_top = 576.4862
+offset_right = 367.05884
+offset_bottom = 773.5133
+theme_override_styles/panel = SubResource("StyleBoxFlat_j7mi4")
+
+[node name="Label2" type="Label" parent="ahmet" unique_id=1525695041]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -882.1919
+offset_top = -68.16797
+offset_right = -181.1919
+offset_bottom = 60.83203
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("10_3q0ns")
+theme_override_font_sizes/font_size = 67
+text = "GAME 
+PROGRAMER"
+
+[node name="kiky" type="Sprite2D" parent="." unique_id=372471344]
+position = Vector2(807.99994, 279)
+scale = Vector2(0.14224534, 0.14224534)
+texture = ExtResource("11_j7mi4")
+
+[node name="Panel" type="Panel" parent="kiky" unique_id=1149515683]
+offset_left = -309.32422
+offset_top = 541.3169
+offset_right = 421.8069
+offset_bottom = 731.1299
+theme_override_styles/panel = SubResource("StyleBoxFlat_3q0ns")
+
+[node name="Label2" type="Label" parent="kiky" unique_id=1600383892]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -814.1738
+offset_top = -98.53076
+offset_right = -113.17383
+offset_bottom = 22.469238
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("10_3q0ns")
+theme_override_font_sizes/font_size = 64
+text = "MAP
+BUILDER"
+
+[connection signal="pressed" from="back_to_menu" to="." method="_on_back_to_menu_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
