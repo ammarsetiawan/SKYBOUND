@@ -320,9 +320,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -86.5
-offset_top = -124.0
+offset_top = -129.0
 offset_right = 96.5
-offset_bottom = -104.0
+offset_bottom = -109.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -475,7 +475,7 @@ theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 12
 theme_override_fonts/font = ExtResource("10_3q0ns")
 theme_override_font_sizes/font_size = 67
-text = "GAME 
+text = "GAMEPLAY 
 PROGRAMER"
 
 [node name="kiky" type="Sprite2D" parent="." unique_id=372471344]
