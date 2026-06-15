@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# 2. LOGIKA JUMP + DOUBLE JUMP
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			jumps_left = MAX_JUMPS
 			is_double_jumping = false          

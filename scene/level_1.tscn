@@ -16,7 +16,7 @@ data = PackedByteArray("//vQRAAMBSJ1oglvR7J1TIT5AOl/FRnywkSkecKlvpjklIs5AVrmua5Z
 loop = true
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_53ndp"]
-size = Vector2(118.875, 41.125)
+size = Vector2(118.875, 26.5625)
 
 [sub_resource type="Animation" id="Animation_x17xt"]
 length = 0.001
@@ -92,7 +92,7 @@ position = Vector2(84, 353)
 position = Vector2(-58.333332, -285.8333)
 scale = Vector2(0.8333333, 0.8333333)
 stream = SubResource("AudioStreamMP3_c1764")
-volume_db = 0.673
+volume_db = -9.103
 autoplay = true
 parameters/looping = true
 
@@ -133,7 +133,7 @@ position = Vector2(-48, 450)
 [node name="pindah_scene" type="Area2D" parent="." unique_id=1554239700]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pindah_scene" unique_id=1621165335]
-position = Vector2(3154.5625, 408.5625)
+position = Vector2(3152, 422.28125)
 shape = SubResource("RectangleShape2D_53ndp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1933972938]
