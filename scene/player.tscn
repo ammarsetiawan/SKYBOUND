@@ -350,7 +350,7 @@ animation = &"efek_respawn"
 
 [node name="dead_sound" type="AudioStreamPlayer2D" parent="." unique_id=41134428]
 stream = ExtResource("8_g2vtq")
-volume_db = 3.888
+volume_db = 7.776
 
 [node name="jump_sound" type="AudioStreamPlayer2D" parent="." unique_id=1871933065]
 stream = ExtResource("9_2fvbb")
