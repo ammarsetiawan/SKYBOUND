@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://k7v8ch4ep578" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Fall (32x32).png" id="5_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://cdouel5kiufw6" path="res://Pixel Adventure 1/Free/Main Characters/Pink Man/Jump (32x32).png" id="5_b26j0"]
 [ext_resource type="Texture2D" uid="uid://8h3ttp1jxpso" path="res://Pixel Adventure 1/Free/Main Characters/Appearing (96x96).png" id="7_hp4bs"]
+[ext_resource type="AudioStream" uid="uid://c2k70qoauobwb" path="res://public/roblox-death-sound-effect.mp3" id="8_g2vtq"]
+[ext_resource type="AudioStream" uid="uid://c6wxasninlysf" path="res://public/freesound_gamestudio-button-394464.mp3" id="9_2fvbb"]
 
 [sub_resource type="Curve" id="Curve_oh5ij"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -345,3 +347,11 @@ shape = SubResource("RectangleShape2D_331ug")
 [node name="effect_respawn" type="AnimatedSprite2D" parent="." unique_id=1241348427]
 sprite_frames = SubResource("SpriteFrames_j4wxg")
 animation = &"efek_respawn"
+
+[node name="dead_sound" type="AudioStreamPlayer2D" parent="." unique_id=41134428]
+stream = ExtResource("8_g2vtq")
+volume_db = 3.888
+
+[node name="jump_sound" type="AudioStreamPlayer2D" parent="." unique_id=1871933065]
+stream = ExtResource("9_2fvbb")
+volume_db = 4.86

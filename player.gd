@@ -12,6 +12,7 @@ func _ready() -> void:
 	$effect_respawn.hide()
 
 func respawn():	
+	$dead_sound.play()
 	$effect_respawn.show()
 	$AnimatedSprite2D.hide()
 	velocity = Vector2.ZERO  
@@ -37,6 +38,7 @@ func _physics_process(delta: float) -> void:
 			is_double_jumping = true          
 			
 		if jumps_left > 0:
+			$jump_sound.play()
 			velocity.y = JUMP_VELOCITY
 			jumps_left -= 1
 
