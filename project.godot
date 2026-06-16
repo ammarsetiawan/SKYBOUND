@@ -15,6 +15,11 @@ run/main_scene="uid://cbmvjmjkdudti"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://cdouel5kiufw6"
 
+[display]
+
+window/size/viewport_width=1160
+window/size/viewport_height=660
+
 [input]
 
 enter={

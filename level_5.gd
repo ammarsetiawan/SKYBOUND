@@ -10,3 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("escape"):
 		get_tree().change_scene_to_file("res://scene/menu_home.tscn")
+
+
+func _on_tamat_body_entered(body: CharacterBody2D) -> void:
+	get_tree().change_scene_to_file("res://scene/tamat.tscn")
