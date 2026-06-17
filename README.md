@@ -36,20 +36,16 @@ Tujuan utama game ini adalah mencapai garis akhir (*finish line*) di setiap leve
 
 Proyek ini dibangun menggunakan teknologi berikut:
 
-*   **Game Engine / Framework:** GODOT ENGINE ![Godot](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)
-*   **Bahasa Pemrograman:** *[Isi dengan bahasa pemrograman, contoh: C# / JavaScript / C++]*
-*   **Asset Grafis:** Pixel Art Assets
+*   **Game Engine / Framework:** GODOT ENGINE 
+*   **Bahasa Pemrograman:** GDScript 
+*   **Asset Grafis:** Pixel Adventure 
 
 ---
 
-## 🚀 Cara Menjalankan Project
+## 🚀 Cara setup/install
 
-### Prasyarat
-Pastikan kamu sudah menginstal *[Sebutkan tools pendukung, contoh: Node.js / Unity Hub / Web Browser terbaru]*.
 
 ### Langkah-Langkah
 
-1. **Clone Repositori Ini**
-```bash
-   git clone [https://github.com/ammarsetiawan/game_group.git](https://github.com/ammarsetiawan/game_group.git)
-   cd game_group
+1. **install file SKYBOUND.exe**
+      install paket install SKYBOUND dari link ini [link](https://drive.google.com/file/d/1Qnt4L3Xu-PCholZh9aqR-QgeVJ7_b3kt/view?usp=sharing)
