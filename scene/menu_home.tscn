@@ -142,7 +142,7 @@ texture = ExtResource("2_mphu6")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1593968135]
 texture_filter = 1
-position = Vector2(-661.9999, -577.00006)
+position = Vector2(-753, -573)
 rotation = 0.49741885
 scale = Vector2(2.937495, 2.7500002)
 texture = ExtResource("3_bgp3a")
@@ -157,7 +157,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -1120.0
 offset_top = -547.0
-offset_right = -660.0
+offset_right = -746.0
 offset_bottom = -495.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -170,7 +170,7 @@ theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 12
 theme_override_fonts/font = ExtResource("3_3q7q2")
 theme_override_font_sizes/font_size = 46
-text = "RUN THE GUY"
+text = "SKYBOUND"
 
 [node name="PLAY" type="Button" parent="." unique_id=1133484324]
 layout_mode = 0

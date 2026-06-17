@@ -578,13 +578,13 @@ sprite_frames = SubResource("SpriteFrames_8n05d")
 autoplay = "default"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=61131959]
-position = Vector2(593, 87)
+position = Vector2(587, 87)
 sprite_frames = SubResource("SpriteFrames_1hj3p")
 autoplay = "default"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1052849135]
 texture_filter = 1
-position = Vector2(754.99994, 104.89084)
+position = Vector2(718.99994, 105.99998)
 rotation = 0.49741885
 scale = Vector2(1.4562373, 1.3632884)
 texture = ExtResource("2_f4pc8")
@@ -641,10 +641,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -160.0
-offset_top = -208.10916
-offset_right = 180.0
-offset_bottom = -173.10916
+offset_left = -128.0
+offset_top = -206.0
+offset_right = 145.0
+offset_bottom = -171.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.46357924, 0.29890752, 0.24761188, 1)
@@ -656,7 +656,7 @@ theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 12
 theme_override_fonts/font = ExtResource("3_biw3l")
 theme_override_font_sizes/font_size = 34
-text = "RUN THE GUY"
+text = "SKYBOUND"
 
 [node name="back_to_menu" type="TextureButton" parent="." unique_id=423221072]
 layout_mode = 0
