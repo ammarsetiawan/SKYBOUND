@@ -9,6 +9,7 @@
 <p align="center">
   <img src="./public/skybound.gif" width="600" alt="Skybound Gameplay">
 </p>
+
 ---
 
 ## ✨ Fitur Utama
