@@ -36,7 +36,7 @@ Tujuan utama game ini adalah mencapai garis akhir (*finish line*) di setiap leve
 
 Proyek ini dibangun menggunakan teknologi berikut:
 
-*   **Game Engine / Framework:** *[Isi dengan Engine yang kamu pakai, contoh: Unity / Godot / Phaser.js / HTML5 Canvas]*
+*   **Game Engine / Framework:** ![Godot Engine](https://img.shields.io/badge/Godot-%23478CBF.svg?style=for-the-badge&logo=Godot-Engine&logoColor=white)
 *   **Bahasa Pemrograman:** *[Isi dengan bahasa pemrograman, contoh: C# / JavaScript / C++]*
 *   **Asset Grafis:** Pixel Art Assets
 
