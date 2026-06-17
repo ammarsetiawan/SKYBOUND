@@ -1,6 +1,6 @@
 
 <p align="center">
-  <video src="public/Recording 2026-06-17 210412.gif" width="700" autoplay loop muted controls></video>
+  <video src="./public/skybound.gif" width="700" autoplay loop muted controls></video>
 </p>
 # SKYBOUND 🎮
 
