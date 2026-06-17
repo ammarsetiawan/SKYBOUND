@@ -24,8 +24,8 @@ Tujuan utama game ini adalah mencapai garis akhir (*finish line*) di setiap leve
 ### Kontrol Karakter
 | Aksi | Tombol Kontrol |
 | :--- | :--- |
-| **Bergerak Kiri** | `A` atau Panah Kiri (`←`) |
-| **Bergerak Kanan** | `D` atau Panah Kanan (`→`) |
+| **Bergerak Kiri** Panah Kiri (`←`) |
+| **Bergerak Kanan** Panah Kanan (`→`) |
 | **Melompat / Lompat Ganda** | `Spacebar` atau Panah Atas (`↑`) |
 
 > ⚠️ **Tips:** Hati-hati dengan penempatan duri di platform sempit. Perhitungkan waktu lompatanmu dengan matang!
