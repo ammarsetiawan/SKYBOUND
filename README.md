@@ -1,7 +1,3 @@
-
-<p align="center">
-  <img src="./public/skybound.gif" width="600" alt="Skybound Gameplay">
-</p>
 # SKYBOUND 🎮
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -9,6 +5,10 @@
 
 **SKYBOUND** adalah sebuah game platformer 2D yang menantang di mana pemain harus melompat dari satu platform ke platform lainnya, menghindari rintangan berbahaya, dan mendaki setinggi mungkin untuk menyelesaikan level. Didukung dengan visual pixel art yang menarik dan gameplay yang adil namun menantang, game ini akan menguji ketangkasan dan waktu reaksi kamu!
 
+
+<p align="center">
+  <img src="./public/skybound.gif" width="600" alt="Skybound Gameplay">
+</p>
 ---
 
 ## ✨ Fitur Utama
