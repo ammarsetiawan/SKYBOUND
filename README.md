@@ -1,6 +1,6 @@
 
 <p align="center">
-  <video src="https://github.com/ammarsetiawan/game_group/raw/main/Screen%20Recording%202026-06-17%20164916.mp4" width="700" autoplay loop muted controls></video>
+  <video src="public/Recording 2026-06-17 210412.gif" width="700" autoplay loop muted controls></video>
 </p>
 # SKYBOUND 🎮
 
