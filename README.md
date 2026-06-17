@@ -1,6 +1,6 @@
 
 <p align="center">
-  <video src="./public/skybound.gif" width="700" autoplay loop muted controls></video>
+  <img src="./public/skybound.gif" width="600" alt="Skybound Gameplay">
 </p>
 # SKYBOUND 🎮
 
