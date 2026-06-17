@@ -1,3 +1,7 @@
+
+<p align="center">
+  <video src="https://github.com/ammarsetiawan/game_group/raw/main/Screen%20Recording%202026-06-17%20164916.mp4" width="700" autoplay loop muted controls></video>
+</p>
 # SKYBOUND 🎮
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
