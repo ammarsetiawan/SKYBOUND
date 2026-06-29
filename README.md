@@ -53,4 +53,4 @@ Proyek ini dibangun menggunakan teknologi berikut:
 ### Langkah-Langkah
 
 1. **install file SKYBOUND.exe**
-      install paket install SKYBOUND dari link ini [link](https://drive.google.com/file/d/1Qnt4L3Xu-PCholZh9aqR-QgeVJ7_b3kt/view?usp=sharing)
+      install paket install SKYBOUND dari link ini [link](https://bit.ly/skybound_Install)
